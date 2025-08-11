@@ -4,7 +4,10 @@ import { imagetools } from "vite-imagetools";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), imagetools()],
+  plugins: [
+    react(),
+    imagetools(),
+  ],
   test: {
     globals: true,
     environment: "jsdom",

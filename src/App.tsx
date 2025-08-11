@@ -1,5 +1,5 @@
 import { RouterProvider } from "react-router-dom";
-import routes from "./routes.tsx";
+import routes from "./router.js";
 import "./App.css";
 import image from "./assets/flashcards_banner.png?w=300;600&format=webp;png&as=picture";
 
