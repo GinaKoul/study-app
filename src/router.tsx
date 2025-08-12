@@ -1,22 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "./pages/Home.js";
-import Units from "./pages/Units.js";
-import Flashcards from "./pages/FlashCards.js";
-import ErrorPage from "./pages/ErrorPage.js";
+import Layout from "./Layout.tsx";
+import Home from "./pages/Home.tsx";
+import Units from "./pages/Units.tsx";
+import FlashCards from "./pages/FlashCards.tsx";
+import ErrorPage from "./pages/ErrorPage.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Layout />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "units",
-    element: <Units />,
-  },
-  {
-    path: "flashcards",
-    element: <Flashcards />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "units", element: <Units /> },
+      { path: "flashcards", element: <FlashCards /> },
+    ],
   },
 ]);
 
