@@ -1,3 +1,23 @@
 .bgPrimary {
   background-color: #e2844b;
 }
+
+.bgSecondary {
+  background-color: #ffc98c;
+}
+
+.bgLight {
+  background-color: #ffdc9f;
+}
+
+.bgDark {
+  background-color: #9d4811;
+}
+
+.colorDark {
+  color: #080808;
+}
+
+.colorLight {
+  color: #ffffff;
+}

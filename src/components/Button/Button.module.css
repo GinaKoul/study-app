@@ -1,0 +1,51 @@
+.button {
+  font-size: 20px;
+  margin-left: auto;
+  padding: 16px 24px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.button span {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 20px;
+  font-weight: bold;
+  transform: translateX(calc(100% + 24px));
+}
+
+.button:hover {
+  color: inherit;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.button:hover span {
+  animation: 300ms ease-out forwards slide-in;
+}
+
+.button:focus span {
+  animation: 100ms linear forwards slide-out;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(calc(100% + 24px));
+  }
+  100% {
+    transform: translateX(8px);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-8px);
+  }
+  100% {
+    transform: translateX(calc(100% + 24px));
+  }
+}

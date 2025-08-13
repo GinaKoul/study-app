@@ -3,6 +3,7 @@ import Layout from "./Layout.tsx";
 import Home from "./pages/Home.tsx";
 import Units from "./pages/Units.tsx";
 import FlashCards from "./pages/FlashCards.tsx";
+import Login from "./pages/Login.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
 
 const router = createBrowserRouter([
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "units", element: <Units /> },
       { path: "flashcards", element: <FlashCards /> },
+      { path: "login", element: <Login /> },
     ],
   },
 ]);

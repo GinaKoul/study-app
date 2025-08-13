@@ -1,12 +1,12 @@
 import React from "react";
 
-export type imgObj = {
+type imgObj = {
   src: string;
   w: number;
   h: number;
 };
 
-export type srcSetObj = {
+type srcSetObj = {
   [key: string]: string;
 };
 
