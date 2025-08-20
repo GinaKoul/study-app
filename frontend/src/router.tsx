@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "./Layout.tsx";
-import Home from "./pages/Home.tsx";
-import Units from "./pages/Units.tsx";
-import FlashCards from "./pages/FlashCards.tsx";
-import Login from "./pages/Login.tsx";
-import ErrorPage from "./pages/ErrorPage.tsx";
+import Layout from "./Layout.js";
+import Home from "./pages/Home.js";
+import Units from "./pages/Units.js";
+import FlashCards from "./pages/FlashCards.js";
+import Login from "./pages/Login.js";
+import ErrorPage from "./pages/ErrorPage.js";
 
 const router = createBrowserRouter([
   {

@@ -1,5 +1,5 @@
-import Form from "../components/FormElements/Form.jsx";
-import Button from "../components/Button/Button.tsx";
+import Form from "../components/FormElements/Form.js";
+import Button from "../components/Button/Button.js";
 
 const Login: React.FC = () => {
   return (
